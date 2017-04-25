@@ -1,7 +1,7 @@
 {
-  "name": "babel-plugin-transform-promise-to-bluebird",
+  "name": "babel-plugin-transform-promise-to-rsvp",
   "version": "1.1.1",
-  "description": "Transforms *Promise* to *bluebird*",
+  "description": "Transforms *Promise* to *rsvp*",
   "main": "main.es5.js",
   "devDependencies": {
     "babel-cli": "^6.10.1",
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sazlhrani/babel-plugin-transform-promise-to-bluebird.git"
+    "url": "git+https://github.com/sazlhrani/babel-plugin-transform-promise-to-rsvp.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sazlhrani/babel-plugin-transform-promise-to-bluebird/issues"
+    "url": "https://github.com/sazlhrani/babel-plugin-transform-promise-to-rsvp/issues"
   },
-  "homepage": "https://github.com/sazlhrani/babel-plugin-transform-promise-to-bluebird#readme"
+  "homepage": "https://github.com/sazlhrani/babel-plugin-transform-promise-to-rsvp#readme"
 }
