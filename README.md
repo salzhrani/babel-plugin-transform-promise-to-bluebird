@@ -1,6 +1,6 @@
-# babel-plugin-transform-promise-to-bluebird
+# babel-plugin-transform-promise-to-rsvp
 
-This plugin transforms `Promise` to `bluebird`.
+This plugin transforms `Promise` to `rvsp`.
 
 ## Example
 ```javascript
@@ -14,7 +14,7 @@ export default function main() {
 ```
 Gets converted to:
 ```javascript
-import {all, default as Promise} from 'bluebird';
+import {all, default as Promise} from 'rsvp';
 
 export default function main() {
 	const taskA = getResultAsync(1337);
@@ -27,20 +27,20 @@ export default function main() {
 
 ## Usage
 
-1. Install *bluebird*: `npm install --save bluebird`
-2. Install the *promise-to-bluebird* plugin: `npm install --save-dev babel-plugin-transform-promise-to-bluebird`
-3. Add *transform-promise-to-bluebird* to your *.babelrc* file:
+1. Install *rsvp*: `npm install --save rsvp`
+2. Install the *promise-to-rsvp* plugin: `npm install --save-dev babel-plugin-transform-promise-to-rsvp`
+3. Add *transform-promise-to-rsvp* to your *.babelrc* file:
 ```json
 {
-	"plugins": ["transform-promise-to-bluebird"]
+	"plugins": ["transform-promise-to-rsvp"]
 }
 ```
-If you'r using the *transform-runtime* plugin add *transform-promise-to-bluebird* before
+If you'r using the *transform-runtime* plugin add *transform-promise-to-rsvp* before
 *transform-runtime*:
 ```json
 {
 	"plugins": [
-		"transform-promise-to-bluebird",
+		"transform-promise-to-rsvp",
 		"transform-runtime"
 	]
 }
