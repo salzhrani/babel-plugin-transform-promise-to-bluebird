@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chpio/babel-plugin-transform-promise-to-bluebird.git"
+    "url": "git+https://github.com/sazlhrani/babel-plugin-transform-promise-to-bluebird.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chpio/babel-plugin-transform-promise-to-bluebird/issues"
+    "url": "https://github.com/sazlhrani/babel-plugin-transform-promise-to-bluebird/issues"
   },
-  "homepage": "https://github.com/chpio/babel-plugin-transform-promise-to-bluebird#readme"
+  "homepage": "https://github.com/sazlhrani/babel-plugin-transform-promise-to-bluebird#readme"
 }
