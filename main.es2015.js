@@ -10,7 +10,7 @@ export default function promiseToRSVP({types: t}) {
 				if (t.isMemberExpression(parent)) return;
 				if (scope.getBindingIdentifier('Promise')) return;
 
-				path.replaceWith(addNamed('rsvp', 'default', 'Promise', {nameHint: 'Promise'}));
+				path.replaceWith(addNamed(path, 'default', 'rsvp', 'Promise', {nameHint: 'Promise'}));
 			},
 
 			MemberExpression(path) {
@@ -24,13 +24,13 @@ export default function promiseToRSVP({types: t}) {
 				if (node.computed) {
 					path.replaceWith(
 						t.memberExpression(
-							addNamed('rsvp', 'default', 'Promise', {nameHint: 'Promise'}),
+							addNamed(path, 'default', 'rsvp', 'Promise', {nameHint: 'Promise'}),
 							node.property,
 							true
 						)
 					);
 				} else {
-					path.replaceWith(addNamed('rsvp', node.property.name, 'Promise', {nameHint: 'Promise'}));
+					path.replaceWith(addNamed(path, 'default', 'rsvp', 'Promise', {nameHint: 'Promise'}));
 				}
 			},
 		},
